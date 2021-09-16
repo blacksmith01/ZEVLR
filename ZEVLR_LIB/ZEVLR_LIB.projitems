@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1abc3444-c152-4be9-a5c6-f40dd1fe45f0</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ZEVLR_LIB</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AppSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BMFont.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CommandLines.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BufferEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\FileEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ImageEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ProcessEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\StreamEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\TextEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PatcherFnt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PatcherPak.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PatcherDlg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZECrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZEPak.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZEResDlgData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZEResFontContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZEResFontData.cs" />
+  </ItemGroup>
+</Project>
